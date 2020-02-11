@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+</head>
+
+<body>
+    <script>
+        // Comentario de uma linha somente
+        var nome = "Felipe"; //string
+        /*
+        Comentario de mais de uma 
+        linha
+        */
+        console.log(nome); //vai imprimir no console do navegador: Felipe
+        //alert(nome); exibe um alerta no navegador
+        var idade = 29; //inteiro
+        var idade_alt = "29"; //string
+        console.log(idade);
+        console.log(idade_alt);
+        var peso = 82.5; //ponto flutuante
+        console.log(peso);
+
+        var humano = true; //booleano
+        var et = false; //booleano
+        console.log("Humano: " + humano); //concatenacao, usa o sinal de +
+        console.log("ET: " + et);
+
+        var nums = [1, 3, 5, 7, 9]; //array de numeros
+        console.log(nums); //imprime o array inteiro
+        console.log(nums[2]); //imprimindo o numero 5, pois ele esta na posicao 2 do array 
+
+        // objeto e suas propriedades (nome, idade, humano)
+        // temos outro objeto chamado amigos dentro de aluno e ele possui a propriedade melhor_amigo
+        var aluno = {
+            nome: "Felipe",
+            idade: 29,
+            humano: true,
+            amigos: {
+                melhor_amigo: "eu mesmo"
+            }
+        };
+        console.log(aluno);
+        console.log(aluno.idade); 
+        console.log(aluno.amigos.melhor_amigo); 
+
+        //constante, nao mudo o valor
+        const PI = 3.1416;
+        console.log(PI);
+        //nao devo mudar o valor da constante
+        //PI = 5.1416;
+        var raio = 5;
+        var circunferencia = 2 * PI * raio;
+        console.log(circunferencia);
+
+        // nulo nao tem valor
+        var valor = null;
+        // tem valor vazio
+        var valor2 = "";
+
+    </script>
+</body>
+
+</html>
