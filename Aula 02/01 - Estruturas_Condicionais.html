@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Estruturas Condicionais
+        function RetornaIdade(idade) {
+            //if, else if e else
+            // me retorna um booleano
+            // qual a diferenca de == e ===
+            // == verifica o valor
+            // === verifica o valor e tipo do valor
+            if (idade === 29) {
+                return "O Felipe tem 29 anos";
+            } else if (idade < 29) {
+                return "O Felipe tem menos de 29 anos";
+            } else {
+                return "O Felipe tem mais de 29 anos";
+            }
+        }
+        // aqui vai executar a funcao
+        console.log(RetornaIdade(29));
+        // aqui vai executar a funcao
+        // o parametro é uma string, ou seja, nao é igual a 29 (numero)
+        console.log(RetornaIdade("29"));
+
+        //passo um parametro, que é a idade
+        function VerificaIdade(idade) {
+            switch (idade) {
+                case 28:
+                    return "O Felipe tem menos de 29 anos";
+                    break;
+                case 29:
+                    return "O Felipe tem 29 anos";
+                    break;
+                case 30:
+                    return "O Felipe tem mais de 29 anos";
+                    break;
+                default:
+                    return "Outra idade!";
+            }
+        }
+        console.log(VerificaIdade(40));
+
+        //AND / OR / NOT
+        var sexo = "F", idade = 17;
+
+        // && AND, as duas condicionais tem que ser verdadeiras
+        if(sexo = "M" && idade >= 18){
+            console.log("Comparação realizada!");
+        }
+        // || OR, uma das duas condicionais tem que ser verdadeiras
+        if(sexo = "M" || idade >= 18){
+            console.log("Comparação realizada novamente!");
+        }
+
+        // Diferente de 17 anos
+        if(idade != 17){
+            console.log("Idade diferente de 17 anos!");
+        }
+        
+        // Condição Ternária
+        var retorno = (sexo === "F") ? 'Masculino' : 'Feminino';
+        console.log(retorno);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

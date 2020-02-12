@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //ARRAYS
+
+        //criei um array de numeros
+        //ele tem 3 elementos (0, 2, e 4)
+        //0 esta na posicao 0, 2 esta na posicao 1 e 4 na posicao 2
+        var nums = [0, 2, 4];    
+        //impressao do valor 2 que esta na posicao 1 do array
+        console.log(nums[1]);
+
+        //outra forma de criar um array
+        var frutas = new Array();
+        frutas[0] = "Uva";
+        frutas[1] = "Laranja";
+        frutas[2] = "Banana";
+        console.log(frutas);
+        // o tamanho do array
+        console.log(frutas.length);
+
+        // push = adicionar um elemento ao final do array
+        frutas.push("Mamao");
+        console.log(frutas);
+
+        // unshift = adicionar um elemento no inicio do array
+        frutas.unshift("Figo");
+        console.log(frutas);
+
+        // shift = remove o primeiro elemento do array
+        frutas.shift();
+        console.log(frutas);
+
+        // pop = remove um elemento ao final do array
+        frutas.pop();
+        console.log(frutas);
+
+        // indexof = pesquisar a posicao do elemento no array
+        var pesquisa = frutas.indexOf("Laranja");
+        console.log(pesquisa);
+
+        // sort = ordenar os elementos do array
+        frutas.sort();
+        console.log(frutas);
+
+        // substitui um valor no array na posicao 2
+        frutas[2] = "Pessego";
+        console.log(frutas);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function verificaPrimo(n) {
+            var contador = 0;
+            var x, i;
+            //verificando se o num é primo ou nao
+            for (x = 1; x <= n; x++) {
+                if (n % x == 0) {
+                    contador++;
+                }
+            }
+            // o contador significa que ele dividiu por 1 e por ele mesmo
+            // entao somou +1 em cada caso
+            if (contador == 2 && n % 2 == 0) {
+                primo += n;
+                par += n;
+                console.log(n + " é número par e primo");
+            }
+            else if (contador == 2 && n % 2 != 0) {
+                primo += n;
+                console.log(n + " é número impar e primo");
+            } else if (contador != 2 && n % 2 == 0) {
+                par += n;
+                console.log(n + " é número par e não primo");
+            } else {
+                console.log(n + " é número impar e não primo");
+            }
+        }
+        var par = 0, primo = 0, i = 1;
+        do {
+            //aqui chama a funcao
+            verificaPrimo(i);
+            // o valor inicial de i é 1
+            //aqui incrementa +1 ao valor de i
+            i++;
+        } while (i < 11); //faz enquanto i for menor que 11
+
+        console.log("Total de Primos: " + primo);
+        console.log("Total de Pares: " + par);
+
+    </script>
+
+</body>
+
+</html>
