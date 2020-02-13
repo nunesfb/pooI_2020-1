@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <a href="https://www.google.com.br" target="blank">
+            Site do google</a>
+        <button id="add">Adicionar Link</button>
+    </div>
+
+    <script>
+
+        // Aqui estamos buscando um elemento button e armazenando na variavel btnElement
+        var btnElement = 
+        document.querySelector('div#app button#add');
+
+        // Aqui estamos dizendo que quando o botao for clicado, iremos executar esta funcao
+        btnElement.onclick = function () {
+            // Aqui estou criando um elemento HTML com a tag a (link)
+            var linkElement = document.createElement('a');
+            // Aqui estou setando 2 atributos para este elemento, a url e forma de abrir
+            linkElement.setAttribute
+            ('href', 'https://www.google.com.br');
+            linkElement.setAttribute('target', 'blank');
+            // Como o texto do link nao é um atributo, precisamos criar um texto na pagina
+            // E depois associar este texto a este link
+            var textElement =
+                document.createTextNode('Acessar site do Google');
+            // O texto passa a ser filho do link
+            linkElement.appendChild(textElement);
+            // Aqui buscamos a div para armazenar na variavel elemento
+            var elemento = document.querySelector('div#app');
+            // Aqui estamos inserindo dentro da div o link
+            elemento.appendChild(linkElement);
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

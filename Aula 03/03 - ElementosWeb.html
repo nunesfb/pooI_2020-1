@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" name="nome" id="nome" class="nome"/>
+        <button class="nome">Adicionar</button>
+        <input type="text" name="texto" id="texto" class="texto"/>
+    </div>
+
+    <div id="teste">
+        <input type="text" name="texto2" id="texto2" class="texto2"/>
+    </div>
+
+    <script>
+        // Podemos buscar elemento HTML por seu ID
+        // A partir desta busca, ele fica armazenado no inputElement (nome qualquer)
+        // E podemos manipular ele via JS
+        var inputElement = document.getElementById('nome');
+        console.log(inputElement);
+
+        // Podemos buscar todos elementos HTML com uma determinada tag
+        // A partir desta busca, eles ficam armazenados no inputElementTag (nome qualquer)
+        // E podemos manipular eles via JS
+        var inputElementTag = document.getElementsByTagName('input');
+        console.log(inputElementTag);
+    
+        // Podemos realizar a mesma coisa anteriormente e buscar um em específico
+        // Visto que retorna uma coleção HTML, eu escolho a posição de um elemento
+        var inputElementTagInputTexto = 
+        document.getElementsByTagName('input')[1];
+        console.log(inputElementTagInputTexto);
+
+        // Podemos pegar um conjunto de elementos HTML que pertencem a uma mesma classe
+        // E manipular todos eles ou somente um por sua posição no array
+        var ClassNameElements = document.getElementsByClassName('nome');
+        console.log(ClassNameElements);
+
+        // Podemos realizar uma busca manual, percorrendo os elementos HTML da pagina
+        // Assim conseguimos buscar um elemento em específico na página
+        var element = document.querySelector("div#app input[name = texto");
+        console.log(element);
+
+        // Podemos realizar uma busca manual, percorrendo os elementos HTML da pagina
+        // Assim conseguimos buscar todos elemento na página
+        var elements = document.querySelectorAll("div#app input")[1];
+        console.log(elements);
+
+        // Exemplo de busca de um elemento e sua manipulação via JS
+        var button = document.querySelector("div#app button");
+        button.onclick = function(){
+            var text = element.value;
+            alert(text);
+        }
+
+    </script>
+    
+</body>
+</html>

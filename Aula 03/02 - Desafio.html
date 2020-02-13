@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        function SorteioMegasena(){
+
+        var i = 0;
+        var sorteio;
+
+        //criei um array vazio chamado megasena
+        var megasena = new Array();
+
+        //enquanto eu nao tiver os 6 numeros no array, ele verifica
+        while(i < 6){
+            // o ceil pega o numero inteiro
+            // o random sorteia dentro de um intervalo de numeros 
+            sorteio = Math.floor(Math.random()*60);
+
+            //nao pode ter numeros iguais
+            //o indexof busca pelo valor que foi sorteado (sorteio)
+            //e verifica se este valor existe no array (megasena)
+            if(megasena.indexOf(sorteio) < 0){
+                megasena.push(sorteio);
+                i++;
+            }
+        }
+        console.log(megasena);
+    }
+    //Realiza a chamada da função
+    SorteioMegasena();
+    </script>
+</body>
+</html>
