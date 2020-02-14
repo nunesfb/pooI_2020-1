@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var frase = "O Gremio vai ganhar o grenal!";
+
+        // pegamos somente uma letra da frase anterior com o charAt
+        // neste caso estamos pegando a letra G
+        // ele inicia a contagem em 0 (letra 0)
+        // na segunda posição temos o espaço e na terceira a letra g
+        var letra = frase.charAt(2);
+        console.log(letra);
+
+        // aqui podemos pegar um pedaço da string com o substr
+        var nome = "Felipe Becker";
+        // neste caso estamos pegando a primeira posicao até a quinta posicao
+        // ele nao considera a sexta posicao
+        // desta forma temos como resultado Felipe
+        var primeira = nome.substr(0, 6);
+        console.log(primeira);
+
+        // com o split podemos separar partes da string de acordo com uma condicao
+        // neste caso estou separando partes da string onde tem um espaço
+        // assim teremos felipe e becker separados em um array
+        // depois estou pegando somente o primeiro elemento do array na posicao 0
+        console.log(nome.split(" "));
+        console.log(nome.split(" ")[0]);
+
+        // aqui podemos toda string com letras maiusculas
+        console.log(nome.toUpperCase());
+        // aqui podemos toda string com letras minusculas
+        console.log(nome.toLowerCase());
+
+
+
+
+    </script>
+    
+</body>
+</html>

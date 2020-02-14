@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // aqui estamos buscando a classe Date (data e hora) do JS
+        // e realizamos sua instanciacao, criando o objeto agora
+        // a partir do objeto podemos acessar seus metodos pré definidos
+        var agora = new Date();
+        // aqui estamos buscando o dia do mes
+        console.log(agora.getDate());
+        // aqui estamos buscando o dia da semana (começa em 0 - domingo)
+        console.log(agora.getDay());
+        // aqui estamos buscando o ano
+        console.log(agora.getFullYear());
+        // aqui estamos buscando o mes (começa em 0 - janeiro)
+        console.log(agora.getMonth());
+
+        // aqui pegamos o mes e imprimos com seu nome
+        var meses = ["Janeiro", "Fevereiro", "Março"];
+        console.log(meses[agora.getMonth()]);
+
+        // aqui pegamos a hora  
+        console.log(agora.getHours());
+        // aqui pegamos os minutos 
+        console.log(agora.getMinutes());
+        // aqui pegamos os segundos 
+        console.log(agora.getSeconds());
+        // aqui pegamos os milisegundos
+        console.log(agora.getMilliseconds());
+
+
+    </script>
+    
+</body>
+</html>
