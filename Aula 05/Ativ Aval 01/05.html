@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="Add" onclick="CreateElement()">Create element</button>
+    <button id="Remove" onclick="RemoveElement()">Remove element</button>
+    <div id="texts"></div>
+    <script>
+        function CreateElement() {
+            var paragraph = document.createElement('p');
+            paragraph.setAttribute('title', 'text');
+
+            var text = document.createTextNode('New Text!');
+
+            paragraph.appendChild(text);
+
+            var texts = document.querySelector('#texts');
+            texts.appendChild(paragraph);
+
+
+        }
+
+        function RemoveElement() {
+            var paragraph = document.querySelector('p');
+            paragraph.remove(paragraph);
+        }
+
+    </script>
+
+</body>
+
+</html>

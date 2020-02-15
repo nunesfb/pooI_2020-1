@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function Book (title, authors, price, isbn, publicatonDate){
+            var book = new Object();
+            book.title = title;
+            book.authors = authors;
+            book.price = price;
+            book.isbn = isbn;
+            book.publicatonDate = publicatonDate;
+
+            console.log("Title: " + book.title);
+            console.log("Authors: " + book.authors);
+            console.log("Price: " + book.price);
+            console.log("Isbn: " + book.isbn);
+            console.log("Publication Date: " + book.publicatonDate);
+        }
+
+        Book("NODEJS", "Felipe", 45.67, "3243535353", "07/02/2019");
+
+
+    </script>
+    
+</body>
+</html>

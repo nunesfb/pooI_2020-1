@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function CalculaSalario (nome, cargo, salarioBruto){
+            var salarioLiquido = salarioBruto - (salarioBruto * 0.24);
+            return nome + " está alocado na empresa como " + 
+            cargo + " e possui um salário líquido de " + salarioLiquido;
+        }
+        console.log(CalculaSalario("Felipe", "Professor", "45000"));
+
+    </script>
+    
+</body>
+</html>
